@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /*Aproximadamente 16px*/
+    font-weight: 600;
+}
+
+header{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
+    min-height: 120px;
+}
+
+a{
+    color: black;
+    text-decoration: none; /*Para tirar o sublinhado do link*/
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#container{
+    position: relative;
+}
+
+#conteudo{
+    width: 98%;
+    margin-left: 9%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub1{
+    display: none;
+}
+
+.sub{
+    display: none;
+}
+
+img#logo{
+    float: left;
+    margin: 5px;
+    margin-left: 4%;
+}
+
+a#login{
+    margin-left: 45%;
+}
+
+a#reserve{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.pousada{
+    display: none;
+}
+
+.home:hover .sub1{
+    display: block;
+    background-color: aquamarine;
+}
+
+[pousadinha] {
+    position: relative;
+    font-weight: bold;
+}
+  
+[pousadinha]:after {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(pousadinha);
+    white-space: nowrap;
+    background-color: #0095ff;
+    color: red;
+}
+  
+[pousadinha]:hover:after {
+    display: block;
+}
+
+main{
+    height: 1300px;
+}
+
+.quadro{
+    background-color: #E0E645;
+    width: 100px;
+    height: 520px;
+    position: absolute;
+    left: 25%;
+    transform: translate(100%, 0);
+}
+
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 176px;
+}
+
+img.quiosque{
+    position: absolute;
+    left: 25%;
+    transform: translate(50%, 0);
+    float: right;
+    display: block;
+}
+
+.junto{
+    padding: 10px;
+    /*margin: 50px 38%;*/
+    position: relative;
+}
