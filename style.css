@@ -16,38 +16,38 @@ header{
     min-height: 120px;
 }
 
-a{
+header img#logo{
+    float: left;
+    margin: 5px;
+    margin-left: 4%;
+}
+
+header a{
     color: black;
     text-decoration: none; /*Para tirar o sublinhado do link*/
     padding: 10px;
     margin-right: 20px;
 }
 
-#container{
+header#container{
     position: relative;
 }
 
-#conteudo{
+header a.sub1{
+    display: none;
+}
+
+header a.sub{
+    display: none;
+}
+
+nav#conteudo{
     width: 98%;
     margin-left: 9%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.sub1{
-    display: none;
-}
-
-.sub{
-    display: none;
-}
-
-img#logo{
-    float: left;
-    margin: 5px;
-    margin-left: 4%;
 }
 
 a#login{
@@ -61,13 +61,8 @@ a#reserve{
     margin-right: 20px;
 }
 
-.pousada{
+header p.pousada{
     display: none;
-}
-
-.home:hover .sub1{
-    display: block;
-    background-color: aquamarine;
 }
 
 [pousadinha] {
@@ -95,7 +90,7 @@ main{
     height: 1300px;
 }
 
-.quadro{
+main div.retangulo{
     background-color: #E0E645;
     width: 100px;
     height: 520px;
@@ -104,7 +99,7 @@ main{
     transform: translate(100%, 0);
 }
 
-.texto{
+main span.txtRetangulo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: black;
@@ -113,7 +108,7 @@ main{
     padding-top: 176px;
 }
 
-img.quiosque{
+main img.quiosque{
     position: absolute;
     left: 25%;
     transform: translate(50%, 0);
@@ -121,7 +116,7 @@ img.quiosque{
     display: block;
 }
 
-.junto{
+main div.imgERetangulo{
     padding: 10px;
     /*margin: 50px 38%;*/
     position: relative;
