@@ -14,19 +14,9 @@ body{
 }
 
 header{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
     height: 120px;
     background-color: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
-}
-
-menu#main{
-    position: fixed;
-    height: 120px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
-    top: 0;
-    left: 0;
 }
 
 menu#hamburguer{
@@ -44,6 +34,10 @@ header menu#hamburguer a{
     font-family: 'Roboto', sans-serif;
     display: block;
     text-align: center;
+}
+
+header menu#hamburguer a.sub1{
+    display: none;
 }
 
 header menu#hamburguer a.sub{
@@ -69,9 +63,18 @@ header nav.main a{
 }
 
 header menu#main img#logo{
+    position: absolute;
+    top: 54px;
+    left: 50px;
+    transform: translate(-50%,-50%);
     float: left;
     margin: 5px;
-    margin-left: 4%;
+    margin-left: 30px;
+    height: 90px;
+}
+
+header menu#main a.sub1{
+    display: none;
 }
 
 header menu#main a.sub{
@@ -131,13 +134,13 @@ main div > h1{
     transform: translate(-50%, -50%);
     font-size: 2.5em;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 main div.retangulo{
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     width: 390px;
     display: block;
     margin: auto;
@@ -146,7 +149,7 @@ main div.retangulo{
 main span.txtRetangulo{ display: none; }
 
 main span.txtRetangulo2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: white;
     display: block;
@@ -158,6 +161,7 @@ main img.quiosque{
     display: block;
     margin: auto;
     margin-top: 20px;
+    background-size: cover;
 }
 
 main div.texto{
@@ -177,7 +181,6 @@ main div.texto p{
     font-weight: lighter;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 40px;
-    color: rgba(0, 0, 0, 0.589);
 }
 
 main div.texto a{
