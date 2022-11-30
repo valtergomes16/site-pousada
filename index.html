@@ -4,40 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="menu.js"></script>
     <title>Pousada Luar da Canastra</title>
 </head>
 <body>
     <header id="container">
-
-        <abbr title="Pousada Luar da Canastra"><a href="index.html"><img src="imagens/logo110.jpg" alt="Logotipo Pousada Luar da Canastra" id="logo"></a></abbr>
-
-        <p class="pousada">Pousada Luar da Canastra</p>
-
-        <nav id="conteudo">
-                <span pousadinha="Pousada Luar da Canastra">
-                    <a href="index.html" class="home">Home</a>
-                        <a href="#" class="sub1">Praia</a>
-                </span>
-                <a href="#">Quartos</a>
-                    <a href="#" class="sub">Casal</a>
-                    <a href="#" class="sub">Família</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Páginas</a>
-                    <a href="#" class="sub">Nossa Equipe</a>
-                    <a href="#" class="sub">Pacotes</a>
-                    <a href="#" class="sub">Galeria</a>
-                <a href="#">Notícias</a>
-                    <a href="#" class="sub">Eventos em Rifaina</a>
-                <a href="#">Contato</a>
-                <a href="#" id="login">Login</a>
-                <a href="#" id="telefone">+55 16 98220 3417</a>
-                <a href="#" id="reserve">Reserve Sua Estadia</a>
-        </nav>
-
+        
+        <menu id="hamburguer">
+            <abbr title="Pousada Luar da Canastra"><a href="index.html"><img src="imagens/logo110.png" alt="Logotipo Pousada Luar da Canastra" id="logo"></a></abbr>
+            <p class="pousada">Pousada Luar da Canastra</p>
+            <nav id="conteudo">
+                    <span pousadinha="Pousada Luar da Canastra">
+                        <a href="index.html" class="home">Home</a>
+                            <a href="#" class="sub1">Praia</a>
+                    </span>
+                    <a href="#">Quartos</a>
+                        <a href="#" class="sub">Casal</a>
+                        <a href="#" class="sub">Família</a>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Páginas</a>
+                        <a href="#" class="sub">Nossa Equipe</a>
+                        <a href="#" class="sub">Pacotes</a>
+                        <a href="#" class="sub">Galeria</a>
+                    <a href="#">Notícias</a>
+                        <a href="#" class="sub">Eventos em Rifaina</a>
+                    <a href="#">Contato</a>
+                    <a href="#" id="login">Login</a>
+                    <a href="#" id="telefone">+55 16 98220 3417</a>
+                    <a href="#" id="reserve">Reserve Sua Estadia</a>
+            </nav>
+            <span id="close" class="material-icons md-36" onclick="clickMenu()">close</span>
+        </menu>
+        <menu id="main">
+            <abbr title="Pousada Luar da Canastra"><a href="index.html"><img src="imagens/logo110.png" alt="Logotipo Pousada Luar da Canastra" id="logo"></a></abbr>
+            <p class="pousada">Pousada Luar da Canastra</p>
+            <nav id="conteudo" class="main">
+                    <span pousadinha="Pousada Luar da Canastra">
+                        <a href="index.html" class="home">Home</a>
+                            <a href="#" class="sub1">Praia</a>
+                    </span>
+                    <a href="#">Quartos</a>
+                        <a href="#" class="sub">Casal</a>
+                        <a href="#" class="sub">Família</a>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Páginas</a>
+                        <a href="#" class="sub">Nossa Equipe</a>
+                        <a href="#" class="sub">Pacotes</a>
+                        <a href="#" class="sub">Galeria</a>
+                    <a href="#">Notícias</a>
+                        <a href="#" class="sub">Eventos em Rifaina</a>
+                    <a href="#">Contato</a>
+                    <a href="#" id="login">Login</a>
+                    <a href="#" id="telefone">+55 16 98220 3417</a>
+                    <a href="#" id="reserve">Reserve Sua Estadia</a>
+            </nav>
+            <span id="burguer" class="material-icons md-36" onclick="clickMenu()">menu</span>
+        </menu>
+        
     </header>
-    <main>
+    <main id="hello">
 
         <div class="imagem1">
             <h1>A Melhor <br> Pousada <br> De Rifaina</h1>
@@ -47,11 +76,14 @@
             <div class="imgERetangulo">
                 <img src="imagens/IMG_1567.JPG" alt="Foto Quiosque" class="quiosque">
                 <div class="retangulo"><span class="txtRetangulo">7 <br>Anos <br>de <br>Exp.</span></div>
+                <div class="retangulo"><span class="txtRetangulo2">7 Anos de Exp.</span></div>
             </div>
             <div class="texto">
-                <p>Férias de qualidade conosco</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias, iste, doloribus minus officia magnam quisquam a molestias sapiente quam ratione commodi. Molestiae facere ex suscipit obcaecati atque ea possimus?</p>
-                <button>Consulte mais informações</button>
+                <div class="texto2">
+                    <h2>Férias de qualidade conosco</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias, iste, doloribus minus officia magnam quisquam a molestias sapiente quam ratione commodi. Molestiae facere ex suscipit obcaecati atque ea possimus?</p>
+                    <a href="#">Consulte mais informações</a>
+                </div>
             </div>
         </section>
 

@@ -19,98 +19,77 @@ header{
     background-color: white;
 }
 
-menu#hamburguer{
-    background-color: #29628F;
-    display: inline-block;
-    padding: 50px;
-    height: 90vh;
-    display: none;
-}
-
-header menu#hamburguer a{
-    color: black;
-    text-decoration: none; /*Para tirar o sublinhado do link*/
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    display: block;
-    text-align: center;
-}
-
-header menu#hamburguer a.sub1{
-    display: none;
-}
-
-header menu#hamburguer a.sub{
-    display: none;
-}
-
-menu#hamburguer a#login{ display: none; }
-
-menu#hamburguer a#telefone{ display: none; }
-
-menu#hamburguer a#reserve{ display: none; }
-
-menu#hamburguer p.pousada{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-header nav.main a{
-    display: none;
-}
-
-header menu#main img#logo{
+header img#logo{
     float: left;
     margin: 5px;
     margin-left: 4%;
 }
 
-header menu#main a.sub1{
+header a{
+    color: black;
+    text-decoration: none; /*Para tirar o sublinhado do link*/
+    padding: 10px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header#container{
+    position: relative;
+}
+
+header a.sub1{
     display: none;
 }
 
-header menu#main a.sub{
+header a.sub{
     display: none;
 }
 
-menu#main a#login{ display: none; }
+header nav#conteudo{
+    width: 90vw;
+    margin-left: 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-menu#main a#telefone{ display: none; }
+a#login{
+    padding-left: 40vw;
+}
 
-menu#main a#reserve{ display: none; }
+a#reserve{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
 
-menu#main p.pousada{
+header p.pousada{
     display: none;
 }
 
-menu#main span#burguer{
-    float: right;
-    margin-top: 42px;
-    margin-right: 30px;
-    cursor: pointer;
+[pousadinha] {
+    position: relative;
+    font-weight: bold;
 }
-
-.material-icons.md-36 { font-size: 36px; }
-
-span#close{
-    float: right;
-    margin-top: -400px;
-    margin-right: -30px;
-    cursor: pointer;
+  
+[pousadinha]:after {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(pousadinha);
+    white-space: nowrap;
+    background-color: #0095ff;
+    color: red;
 }
-
-
-
-
-
-
+  
+[pousadinha]:hover:after {
+    display: block;
+}
 
 main{
     height: 1300px;
@@ -118,13 +97,13 @@ main{
 
 main div.imagem1{
     background-image: url(../imagens/fundo_azul.jpg);
-    height: 300px;
+    height: 500px;
     position: relative;
 }
 
 main  div.imagem1  h1{
     font-family: 'Sriracha', cursive;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 main div > h1{
@@ -132,44 +111,53 @@ main div > h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 4.5em;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main div.retangulo{
-    background-color: #F2AF5C;
-    width: 390px;
-    display: block;
-    margin: auto;
+    background-color: #E0E645;
+    width: 100px;
+    height: 520px;
+    position: absolute;
+    left: 25%;
+    transform: translate(100%, 0);
 }
 
-main span.txtRetangulo{ display: none; }
-
-main span.txtRetangulo2{
+main span.txtRetangulo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: black;
     display: block;
     text-align: center;
-    padding: 20px;
+    padding-top: 176px;
 }
 
 main img.quiosque{
+    position: absolute;
+    left: 25%;
+    transform: translate(50%, 0);
+    float: right;
     display: block;
-    margin: auto;
-    margin-top: 20px;
+}
+
+main div.imgERetangulo{
+    margin: 10px;
+    position: relative;
 }
 
 main div.texto{
-    width: 390px;  
-    margin: auto;  
+    background-color: white;
+    width: 390px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
 }
 
 main div.texto h2{
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    margin-top: 40px;
 }
 
 main div.texto p{
@@ -192,4 +180,10 @@ main div.texto a{
     margin-left: 15px;
     display: block;
     text-align: center;
+}
+
+main div.texto2{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
