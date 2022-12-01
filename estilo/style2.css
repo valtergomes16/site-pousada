@@ -1,189 +1,108 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 992px)  /*Se tiver no mínimo 992px, pega desktop e telas grandes*/ {
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+    #burguer{ display: none; }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em; /*Aproximadamente 16px*/
-    font-weight: 600;
-}
+    header nav.main a { display: block; }
 
-header{
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
-    min-height: 120px;
-    background-color: white;
-}
+    header a {
+        color: black;
+        text-decoration: none; /*Para tirar o sublinhado do link*/
+        padding: 15px;
+        margin-right: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
 
-header img#logo{
-    float: left;
-    margin: 5px;
-    margin-left: 4%;
-}
+    header#container { 
+        position: relative;
+    }
 
-header a{
-    color: black;
-    text-decoration: none; /*Para tirar o sublinhado do link*/
-    padding: 10px;
-    margin-right: 20px;
-    font-family: 'Roboto', sans-serif;
-}
+    header nav#conteudo {
+        width: 90vw;
+        margin-left: 6%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
 
-header#container{
-    position: relative;
-}
+    menu#main a#login{ display: block; }
 
-header a.sub1{
-    display: none;
-}
+    menu#main a#telefone{ display: block; }
 
-header a.sub{
-    display: none;
-}
+    menu#main a#reserve{ display: block; }
 
-header nav#conteudo{
-    width: 90vw;
-    margin-left: 6%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    a#reserve {
+        background-color: black;
+        color: white;
+        margin-right: 20px;
+        display: flex;
+    }
 
-a#login{
-    padding-left: 40vw;
-}
+    #info {
+        display: flex;
+        position: relative;
+        left: 40vw;
+    }
 
-a#reserve{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin-right: 20px;
-    display: inline-block;
-}
+    main {
+        height: 1300px;
+    }
 
-header p.pousada{
-    display: none;
-}
+    main div.imagem1 {
+        background-image: url(../imagens/fundo_azul.jpg);
+        height: 500px;
+        position: relative;
+    }
 
-[pousadinha] {
-    position: relative;
-    font-weight: bold;
-}
-  
-[pousadinha]:after {
-    display: none;
-    position: absolute;
-    padding: 5px;
-    border-radius: 3px;
-    left: calc(100% + 2px);
-    content: attr(pousadinha);
-    white-space: nowrap;
-    background-color: #0095ff;
-    color: red;
-}
-  
-[pousadinha]:hover:after {
-    display: block;
-}
+    main  div.imagem1  h1 {
+        line-height: 1.2em;
+        font-size: 4.5em;
+    }
 
-main{
-    height: 1300px;
-}
+    main div.retangulo {
+        width: 100px;
+        height: 520px;
+        position: absolute;
+        left: 25%;
+        transform: translate(100%, 0);
+    }
 
-main div.imagem1{
-    background-image: url(../imagens/fundo_azul.jpg);
-    height: 500px;
-    position: relative;
-}
+    main span.txtRetangulo2 {
+        padding: 10px;
+        padding-top: 186px;
+    }
 
-main  div.imagem1  h1{
-    font-family: 'Sriracha', cursive;
-    line-height: 1.2em;
-}
+    main img.quiosque {
+        margin-top: 0px;
+        position: absolute;
+        left: 25.2%;
+        transform: translate(50%, 0);
+        float: right;
+    }
 
-main div > h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4.5em;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    main div.imgERetangulo {
+        margin-top: 10px;
+        position: relative;
+    }
 
-main div.retangulo{
-    background-color: #E0E645;
-    width: 100px;
-    height: 520px;
-    position: absolute;
-    left: 25%;
-    transform: translate(100%, 0);
-}
+    main div.texto {
+        height: 520px;
+        position: absolute;
+        left: 50%;
+    }
 
-main span.txtRetangulo{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color: black;
-    display: block;
-    text-align: center;
-    padding-top: 176px;
-}
+    main div.texto h2 {
+        margin-top: 0px;
+    }
 
-main img.quiosque{
-    position: absolute;
-    left: 25%;
-    transform: translate(50%, 0);
-    float: right;
-    display: block;
-}
-
-main div.imgERetangulo{
-    margin: 10px;
-    position: relative;
-}
-
-main div.texto{
-    background-color: white;
-    width: 390px;
-    height: 520px;
-    position: absolute;
-    left: 50%;
-}
-
-main div.texto h2{
-    text-align: center;
-    padding: 20px;
-}
-
-main div.texto p{
-    text-align: justify;
-    padding: 15px;
-    font-weight: lighter;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 40px;
-}
-
-main div.texto a{
-    text-decoration: none;
-    border: 0px;
-    color: white;
-    background-color: black;
-    padding: 15px;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    width: 200px;
-    margin-left: 15px;
-    display: block;
-    text-align: center;
-}
-
-main div.texto2{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    main div.texto2 {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
 }

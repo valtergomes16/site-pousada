@@ -2,24 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em; /*Aproximadamente 16px*/
     font-weight: 600;
 }
 
-header{
+header {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
     height: 120px;
     background-color: white;
 }
 
-menu#hamburguer{
+menu#hamburguer {
     background-color: #29628F;
     display: inline-block;
     padding: 50px;
@@ -27,7 +27,7 @@ menu#hamburguer{
     display: none;
 }
 
-header menu#hamburguer a{
+header menu#hamburguer a {
     color: black;
     text-decoration: none; /*Para tirar o sublinhado do link*/
     padding: 10px;
@@ -36,21 +36,19 @@ header menu#hamburguer a{
     text-align: center;
 }
 
-header menu#hamburguer a.sub1{
+header menu#hamburguer a.sub1 {
     display: none;
 }
 
-header menu#hamburguer a.sub{
+header menu#hamburguer a.sub {
     display: none;
 }
 
-menu#hamburguer a#login{ display: none; }
+menu#hamburguer a#login { display: none; }
 
-menu#hamburguer a#telefone{ display: none; }
+menu#hamburguer a#telefone { display: none; }
 
-menu#hamburguer a#reserve{ display: none; }
-
-
+menu#hamburguer a#reserve { display: none; }
 
 
 
@@ -58,11 +56,10 @@ menu#hamburguer a#reserve{ display: none; }
 
 
 
-header nav.main a{
-    display: none;
-}
 
-header menu#main img#logo{
+header nav.main a { display: none; }
+
+header menu#main img#logo {
     position: absolute;
     top: 54px;
     left: 50px;
@@ -73,21 +70,21 @@ header menu#main img#logo{
     height: 90px;
 }
 
-header menu#main a.sub1{
+header menu#main a.sub1 {
     display: none;
 }
 
-header menu#main a.sub{
+header menu#main a.sub {
     display: none;
 }
 
-menu#main a#login{ display: none; }
+menu#main a#login { display: none; }
 
-menu#main a#telefone{ display: none; }
+menu#main a#telefone { display: none; }
 
-menu#main a#reserve{ display: none; }
+menu#main a#reserve { display: none; }
 
-menu#main span#burguer{
+menu#main span#burguer {
     float: right;
     margin-top: 42px;
     margin-right: 30px;
@@ -96,7 +93,7 @@ menu#main span#burguer{
 
 .material-icons.md-36 { font-size: 36px; }
 
-span#close{
+span#close {
     float: right;
     margin-top: -400px;
     margin-right: -30px;
@@ -109,11 +106,11 @@ span#close{
 
 
 
-main{
+main {
     height: 1300px;
 }
 
-main div.imagem1{
+main div.imagem1 {
     background-image: url(../imagens/piscina750.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -122,12 +119,9 @@ main div.imagem1{
     position: relative;
 }
 
-main  div.imagem1  h1{
+main div > h1 {
     font-family: 'Sriracha', cursive;
     line-height: 1em;
-}
-
-main div > h1{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,20 +129,19 @@ main div > h1{
     font-size: 2.5em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-main div.retangulo{
+main div.retangulo {
     background-color: rgb(17, 17, 17);
     width: 390px;
     display: block;
     margin: auto;
 }
 
-main span.txtRetangulo{ display: none; }
+main span.txtRetangulo { display: none; }
 
-main span.txtRetangulo2{
+main span.txtRetangulo2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: white;
@@ -157,25 +150,24 @@ main span.txtRetangulo2{
     padding: 20px;
 }
 
-main img.quiosque{
+main img.quiosque {
     display: block;
     margin: auto;
     margin-top: 20px;
-    background-size: cover;
 }
 
-main div.texto{
+main div.texto {
     width: 390px;  
     margin: auto;  
 }
 
-main div.texto h2{
+main div.texto h2 {
     text-align: left;
     padding: 20px;
     margin-top: 40px;
 }
 
-main div.texto p{
+main div.texto p {
     text-align: justify;
     padding: 15px;
     font-weight: lighter;
@@ -183,7 +175,7 @@ main div.texto p{
     padding-bottom: 40px;
 }
 
-main div.texto a{
+main div.texto a {
     text-decoration: none;
     border: 0px;
     color: white;
