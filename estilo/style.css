@@ -32,20 +32,25 @@ menu#hamburguer {
 header menu#hamburguer a {
     color: white;
     font-size: 1.2em;
+    font-weight: bold;
     text-decoration: none; /*Para tirar o sublinhado do link*/
-    padding: 10px;
+    padding: 13px;
     font-family: 'Roboto', sans-serif;
     display: block;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
 }
 
-header menu#hamburguer a.sub1 {
-    display: none;
+header menu#hamburguer span {
+    position: relative;
+    top: -75px;
 }
 
-header menu#hamburguer a.sub {
-    display: none;
+header menu#hamburguer nav {
+    margin-top: 20px;
 }
+
+header menu#hamburguer a.sub { display: none; }
 
 menu#hamburguer a#login { display: none; }
 
@@ -71,10 +76,6 @@ header menu#main img#logo {
     margin-left: 30px;
     height: 90px;
     transform: translate(-50%,-50%);
-}
-
-header menu#main a.sub1 {
-    display: none;
 }
 
 header menu#main a.sub {

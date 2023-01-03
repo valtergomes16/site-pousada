@@ -48,10 +48,6 @@ header menu#hamburguer a {
     text-align: center;
 }
 
-header menu#hamburguer a.sub1 {
-    display: none;
-}
-
 header menu#hamburguer a.sub {
     display: none;
 }
@@ -80,10 +76,6 @@ header menu#main img#logo {
     margin-left: 30px;
     height: 90px;
     transform: translate(-50%,-50%);
-}
-
-header menu#main a.sub1 {
-    display: none;
 }
 
 header menu#main a.sub {
