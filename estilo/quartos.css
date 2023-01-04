@@ -65,7 +65,7 @@ menu#hamburguer a#reserve { display: none; }
 
 header nav.main a { display: none; }
 
-header menu#main img#logo {
+header menu#mainquarto img#logo {
     position: absolute;
     top: 54px;
     left: 50px;
@@ -76,17 +76,17 @@ header menu#main img#logo {
     transform: translate(-50%,-50%);
 }
 
-header menu#main a.sub {
+header menu#mainquarto a.sub {
     display: none;
 }
 
-menu#main a#login { display: none; }
+menu#mainquarto a#login { display: none; }
 
-menu#main a#telefone { display: none; }
+menu#mainquarto a#telefone { display: none; }
 
-menu#main a#reserve { display: none; }
+menu#mainquarto a#reserve { display: none; }
 
-menu#main span#burguer {
+menu#mainquarto span#burguer {
     float: right;
     margin-top: 42px;
     margin-right: 30px;

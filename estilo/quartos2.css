@@ -40,7 +40,7 @@
         transform: translate(-40%, -50%);
     }
 
-    menu#main a#reserve{ display: block; }
+    menu#mainquarto a#reserve{ display: block; }
 
     a#reserve {
         background-color: black;
@@ -85,11 +85,11 @@
         transform: translate(-50%, -50%);
     }
 
-    menu#main a#login{ display: none; }
+    menu#mainquarto a#login{ display: none; }
 
-    menu#main a#telefone{ display: none; }
+    menu#mainquarto a#telefone{ display: none; }
 
-    menu#main a#reserve{ 
+    menu#mainquarto a#reserve{ 
         display: block; 
         display: flex;
         position: relative;
@@ -145,11 +145,11 @@
         transform: translate(-50%, -50%);
     }
 
-    menu#main a#login{ display: block; }
+    menu#mainquarto a#login{ display: block; }
 
-    menu#main a#telefone{ display: block; }
+    menu#mainquarto a#telefone{ display: block; }
 
-    menu#main a#reserve{ display: block; }
+    menu#mainquarto a#reserve{ display: block; }
 
     a#reserve {
         background-color: black;
