@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body, html {
+        width: 100vw;
+    }
+
+    .iquartos {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #burguer{ display: none; }
+
+    header nav.main a { display: block; }
+
+    header a {
+        color: black;
+        text-decoration: none; /*Para tirar o sublinhado do link*/
+        padding: 10px;
+        margin-right: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9em;
+    }
+
+    header#container { 
+        position: relative;
+    }
+
+    header nav#conteudo {
+        width: 90vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-40%, -50%);
+    }
+
+    menu#main a#reserve{ display: block; }
+
+    a#reserve {
+        background-color: black;
+        color: white;
+        margin-right: 20px;
+        display: flex;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1242px) {
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    .iquartos {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #burguer{ display: none; }
+
+    header nav.main a { display: block; }
+
+    header a {
+        color: black;
+        text-decoration: none; /*Para tirar o sublinhado do link*/
+        padding: 15px;
+        margin-right: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header#container { 
+        position: relative;
+    }
+
+    header nav#conteudo {
+        width: 90vw;
+        margin-left: 10%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+    }
+
+    menu#main a#login{ display: none; }
+
+    menu#main a#telefone{ display: none; }
+
+    menu#main a#reserve{ 
+        display: block; 
+        display: flex;
+        position: relative;
+        left: 20px;
+    }
+
+    a#reserve {
+        background-color: black;
+        color: white;
+        margin-right: 20px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1242px)  /*Se tiver no mínimo 992px, pega desktop e telas grandes*/ {
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+    #container {
+        position: relative;
+    }
+
+    #quartos {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #burguer{ display: none; }
+
+    header nav.main a { display: block; }
+
+    header a {
+        color: black;
+        text-decoration: none; /*Para tirar o sublinhado do link*/
+        padding: 15px;
+        margin-right: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header#container { 
+        position: relative;
+    }
+
+    header nav#conteudo {
+        width: 90vw;
+        margin-left: 6%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+    }
+
+    menu#main a#login{ display: block; }
+
+    menu#main a#telefone{ display: block; }
+
+    menu#main a#reserve{ display: block; }
+
+    a#reserve {
+        background-color: black;
+        color: white;
+        margin-right: 20px;
+        display: flex;
+    }
+
+    #info {
+        display: flex;
+        position: relative;
+        left: 30vw;
+    }
+}
