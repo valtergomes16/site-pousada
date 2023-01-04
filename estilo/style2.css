@@ -203,7 +203,7 @@
     }
 }
 
-@media screen and (min-width: 1242px)  /*Se tiver no mínimo 992px, pega desktop e telas grandes*/ {
+@media screen and (min-width: 1242px) {
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 

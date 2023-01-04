@@ -14,9 +14,18 @@ body {
 }
 
 header {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
     height: 120px;
     background-color: white;
+}
+
+menu#main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
 }
 
 menu#hamburguer {
@@ -65,7 +74,7 @@ menu#hamburguer a#reserve { display: none; }
 
 header nav.main a { display: none; }
 
-header menu#mainquarto img#logo {
+header menu#main img#logo {
     position: absolute;
     top: 54px;
     left: 50px;
@@ -76,17 +85,17 @@ header menu#mainquarto img#logo {
     transform: translate(-50%,-50%);
 }
 
-header menu#mainquarto a.sub {
+header menu#main a.sub {
     display: none;
 }
 
-menu#mainquarto a#login { display: none; }
+menu#main a#login { display: none; }
 
-menu#mainquarto a#telefone { display: none; }
+menu#main a#telefone { display: none; }
 
-menu#mainquarto a#reserve { display: none; }
+menu#main a#reserve { display: none; }
 
-menu#mainquarto span#burguer {
+menu#main span#burguer {
     float: right;
     margin-top: 42px;
     margin-right: 30px;
