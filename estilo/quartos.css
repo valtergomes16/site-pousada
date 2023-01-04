@@ -19,10 +19,6 @@ body {
     font-weight: 600;
 }
 
-.iquartos {
-    
-}
-
 menu#hamburguer {
     background-image: linear-gradient(to bottom, #3823af, #06aaf6);
     display: inline-block;

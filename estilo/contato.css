@@ -90,7 +90,7 @@ menu#main a#reserve { display: none; }
 
 menu#main span#burguer {
     float: right;
-    margin-top: 42px;
+    margin-top: 24px;
     margin-right: 30px;
     cursor: pointer;
 }
