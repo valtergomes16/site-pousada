@@ -32,7 +32,7 @@
     }
 
     header nav#conteudo {
-        width: 90vw;
+        width: 80vw;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -76,7 +76,7 @@
     }
 
     header nav#conteudo {
-        width: 90vw;
+        width: 80vw;
         margin-left: 10%;
         position: absolute;
         top: 50%;
@@ -104,10 +104,9 @@
     }
 }
 
-@media screen and (min-width: 1242px)  /*Se tiver no mínimo 992px, pega desktop e telas grandes*/ {
+@media screen and (min-width: 1242px) {
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 
     #container {
         position: relative;
@@ -137,7 +136,7 @@
     }
 
     header nav#conteudo {
-        width: 90vw;
+        width: 80vw;
         margin-left: 6%;
         position: absolute;
         top: 50%;
