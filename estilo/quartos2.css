@@ -12,6 +12,7 @@
         display: block;
         margin: auto;
         margin-top: 20px;
+        max-width: 500px;
     }
 
     #burguer{ display: none; }
@@ -57,6 +58,7 @@
         display: block;
         margin: auto;
         margin-top: 20px;
+        max-width: 600px;
     }
 
     #burguer{ display: none; }
@@ -112,11 +114,18 @@
         position: relative;
     }
 
+    .iquartos {
+        max-width: 600px;
+        display: inline-block;
+        /*border: 25px solid rgba(219, 215, 215, 0.123);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.103);
+        border-radius: 10px;
+        margin-left: 10px;*/
+    }
+
     #quartos {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        display: block;
+        text-align: center;
     }
 
     #burguer{ display: none; }
@@ -145,11 +154,11 @@
         transform: translate(-50%, -50%);
     }
 
-    menu#mainquarto a#login{ display: block; }
+    menu#main a#login{ display: block; }
 
-    menu#mainquarto a#telefone{ display: block; }
+    menu#main a#telefone{ display: block; }
 
-    menu#mainquarto a#reserve{ display: block; }
+    menu#main a#reserve{ display: block; }
 
     a#reserve {
         background-color: black;

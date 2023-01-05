@@ -214,7 +214,7 @@
     #info {
         display: flex;
         position: relative;
-        left: 30vw;
+        left: 25vw;
     }
 
     main {
@@ -232,7 +232,17 @@
         font-size: 4.5em;
     }
 
-    main div.retangulo {
+    #fotoetexto {
+        display: inline-flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .texto {
+        padding-left: 100px;
+    }
+    /*main div.retangulo {
         width: 100px;
         height: 520px;
         position: absolute;
@@ -271,5 +281,5 @@
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-    }
+    }*/
 }
