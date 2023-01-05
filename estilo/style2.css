@@ -8,6 +8,10 @@
         width: 100vw;
     }
 
+    #bloquear-selecao {
+        user-select: none; /*Impede o usuário de selecionar o texto*/
+    }
+
     #burguer{ display: none; }
 
     header nav.main a { display: block; }
@@ -57,47 +61,8 @@
         line-height: 1.2em;
         font-size: 4.5em;
     }
-
-    main div.retangulo {
-        width: 100px;
-        height: 520px;
-        position: absolute;
-        transform: translate(100%, 0);
-    }
-
-    main span.txtRetangulo2 {
-        padding: 10px;
-        padding-top: 186px;
-    }
-
-    main img.quiosque {
-        margin-top: 0px;
-        position: absolute;
-        transform: translate(50%, 0);
-    }
-
-    main div.imgERetangulo {
-        margin-top: 10px;
-        position: relative;
-    }
-
-    main div.texto {
-        height: 520px;
-        position: absolute;
-        left: 50%;
-    }
-
-    main div.texto h2 {
-        margin-top: 0px;
-    }
-
-    main div.texto2 {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
 }
+
 @media screen and (min-width: 992px) and (max-width: 1242px) {
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -165,7 +130,7 @@
         width: 100px;
         height: 520px;
         position: absolute;
-        left: 25%;
+        left: -5%;
         transform: translate(100%, 0);
     }
 
@@ -177,7 +142,7 @@
     main img.quiosque {
         margin-top: 0px;
         position: absolute;
-        left: 25.2%;
+        left: -5.2%;
         transform: translate(50%, 0);
     }
 
@@ -189,7 +154,7 @@
     main div.texto {
         height: 520px;
         position: absolute;
-        left: 50%;
+        left: 55%;
     }
 
     main div.texto h2 {
@@ -271,7 +236,7 @@
         width: 100px;
         height: 520px;
         position: absolute;
-        left: 25%;
+        left: 10%;
         transform: translate(100%, 0);
     }
 
@@ -283,7 +248,7 @@
     main img.quiosque {
         margin-top: 0px;
         position: absolute;
-        left: 25.2%;
+        left: 10.2%;
         transform: translate(50%, 0);
     }
 
@@ -295,7 +260,7 @@
     main div.texto {
         height: 520px;
         position: absolute;
-        left: 50%;
+        right: 10%;
     }
 
     main div.texto h2 {

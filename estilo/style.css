@@ -4,6 +4,10 @@
 
 /*Mobile First*/
 
+#bloquear-selecao {
+    user-select: none; /*Impede o usuário de selecionar o texto*/
+}
+
 menu#main {
     position: fixed;
     top: 0;
