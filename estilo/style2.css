@@ -47,10 +47,6 @@
         display: flex;
     }
 
-    main {
-        height: 1300px;
-    }
-
     main div.imagem1 {
         background-image: url(../imagens/fundo_azul.jpg);
         height: 500px;
@@ -60,6 +56,14 @@
     main  div.imagem1  h1 {
         line-height: 1.2em;
         font-size: 4.5em;
+    }
+
+    #txtAcomodacoes {
+        min-width: 600px;
+    }
+
+    #divtxtAcomodacoes {
+        min-width: 720px;
     }
 }
 
@@ -109,10 +113,6 @@
         color: white;
         margin-right: 20px;
         display: flex;
-    }
-
-    main {
-        height: 1300px;
     }
 
     main div.imagem1 {
@@ -166,6 +166,14 @@
         top: 50%;
         transform: translate(0, -50%);
     }
+
+    #txtAcomodacoes {
+        min-width: 800px;
+    }
+
+    #divtxtAcomodacoes {
+        min-width: 900px;
+    }
 }
 
 @media screen and (min-width: 1242px) {
@@ -218,7 +226,7 @@
     }
 
     main {
-        height: 1300px;
+        height: 1700px;
     }
 
     main div.imagem1 {
@@ -242,6 +250,15 @@
     .texto {
         padding-left: 100px;
     }
+
+    #txtAcomodacoes {
+        width: 1000px;
+    }
+
+    #divtxtAcomodacoes {
+        width: 1200px;
+    }
+
     /*main div.retangulo {
         width: 100px;
         height: 520px;

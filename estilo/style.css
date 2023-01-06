@@ -124,7 +124,8 @@ span#close {
 
 
 main {
-    height: 1300px;
+    background-color: #ededf3;
+    height: 2100px;
 }
 
 main div.imagem1 {
@@ -134,6 +135,16 @@ main div.imagem1 {
     background-size: cover;
     height: 300px;
     position: relative;
+}
+
+#neve {
+    background-image: url(../imagens/teste5.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    top: -190px;
 }
 
 main div > h1 {
@@ -204,4 +215,23 @@ main div.texto a {
     margin-left: 15px;
     display: block;
     text-align: center;
+}
+
+#txtAcomodacoes {
+    min-width: 300px;
+    max-width: 400px;
+    margin: auto;
+    text-align: justify;
+}
+
+#divtxtAcomodacoes {
+    margin: auto;
+    min-width: 400px;
+    max-width: 500px;
+    background-color: rgba(241, 241, 241, 0.493);
+    padding: 50px 0;
+    margin-top: 20px;
+    line-height: 1.5em;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.120);
+    border-radius: 20px;
 }

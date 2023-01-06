@@ -117,15 +117,20 @@
     .iquartos {
         max-width: 600px;
         display: inline-block;
-        /*border: 25px solid rgba(219, 215, 215, 0.123);
+        border: 25px solid rgba(219, 215, 215, 0.123);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.103);
         border-radius: 10px;
-        margin-left: 10px;*/
+        margin-left: 10px;
     }
 
     #quartos {
+        margin-top: 30px;
         display: block;
         text-align: center;
+        background-color: rgba(219, 215, 215, 0.123);
+        box-shadow: 5px 2px 6px rgba(0, 0, 0, 0.103);
+        border-radius: 10px;
+        padding: 50px 0px;
     }
 
     #burguer{ display: none; }
